@@ -49,9 +49,9 @@
     <ul>
         <li><a href="1_source/index.php" target="_blank" rel="noopener noreferrer">Source Code Intrusion</a></li>
         <li><a href="2_XSS/index.php" target="_blank" rel="noopener noreferrer">XSS</a></li>
-        <li><a href="3_directory_traversal/site/index.php" target="_blank" rel="noopener noreferrer">Directory Traversal</a></li>
+        <li><a href="3_directory_traversal/index.php" target="_blank" rel="noopener noreferrer">Directory Traversal</a></li>
         <li><a href="4_url_parameter/index.php" target="_blank" rel="noopener noreferrer">URL Parameter</a></li>
-        <li><a href="7_Image_OSINT/index.php" target="_blank" rel="noopener noreferrer">Image OSINT</a></li>
+        <li><a href="7_Image_OSINT/image.php" target="_blank" rel="noopener noreferrer">Image OSINT</a></li>
         
     </ul>
 </body>
