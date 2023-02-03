@@ -1,0 +1,244 @@
+.flag-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+/* All CSS goes here*/
+:root {
+--white: #FFFFFF;
+--pale-white: #ECECEC;
+--dark-blue: #1C1E35;
+--bgcolor: #101223;
+--greyish-blue: #4C518A;
+--marine-blue: #0066FF;
+}
+
+
+body {
+background-color: var(--bgcolor);
+color: var(--pale-white);
+font-family: Raleway;
+}
+
+
+nav {
+display: flex;
+align-items: center;
+padding: 0px 5vh 0px 5vh;
+background-color: var(--bgcolor); /*Content starts flowing over the navbar when scrolled without bgcolor property*/
+}
+
+
+
+
+/* ============================ Class Definitions ============================ */
+
+/* raleway is a shorthand alias for font-raleway*/
+.font-raleway, .raleway {
+font-family: Raleway;
+}
+
+/* michroma is a shorthand alias for font-michroma*/
+.font-michroma, .michroma {
+font-family: Michroma;
+}
+
+/* Use this in conjunction with the above fonts */
+.btn-primary {
+background-color: var(--marine-blue);
+color: var(--white);
+border: none;
+border-radius: 8px;
+}
+
+.challenge-page {
+display: flex;
+flex-direction: column;
+/* align-items: center;  */
+justify-content: space-around;
+height: 90vh;
+margin: 0px 5vh 0px 5vh;
+/* padding: 0px 5vh 0px 5vh; */
+}
+
+.challenge-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.challenge-section {
+display: flex;
+flex: 1;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-right: 64px;
+min-width: 40vw;
+}
+.challenge-section > p {
+letter-spacing: 1.5px;
+word-spacing: 4px;
+line-height: 2rem;
+}
+.challenge-section > a {
+display: flex;
+color: var(--pale-white);
+margin: 16px;
+letter-spacing: 2px;
+}
+.challenge-section > h4 {
+font-weight: 500;
+word-spacing: 2px;
+line-height: 2rem;
+}
+.challenge-section > textarea {
+height: 96px;
+width: 40vw;
+font-size: 16px;
+color: var(--pale-white);
+background-color: var(--dark-blue);
+border: none;
+border-radius: 8px;
+resize: none;
+}
+.challenge-section > textarea:focus, .challenge-section > textarea:hover {
+outline: 2px var(--marine-blue) solid;
+/* border: #0066FF; */
+}
+.challenge-section button {
+width: 128px;
+height: 48px;
+cursor: pointer;
+margin: 2rem;
+margin-left: 35%;
+}
+
+.hint{
+height: 96px;
+width: 40vw;
+font-size: 16px;
+color: var(--pale-white);
+background-color: var(--dark-blue);
+border: none;
+border-radius: 8px;
+text-align: center;
+}
+
+.challenge-section > a > img{
+height: 20px;
+width: 20px;
+margin: 0px 8px 0px 8px;
+}
+
+.challenge-questions {
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-items: center; */
+/* flex: 1; */
+border-radius: 8px;
+background-color: var(--dark-blue);
+margin-left: 64px;
+min-width: 40vw; /* An attempt to make the UI less cluttered */
+}
+.challenge-questions > form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.question > label {
+font-family: Michroma;
+font-size: 12px;
+}
+.question > input{
+/* width: 80%; */
+height: 32px;
+margin: 16px;
+font-family: Michroma;
+color: var(--pale-white);
+background-color: transparent;
+/* This can't be converted to use vairables  */
+border: 2px solid #4C518A; 
+border-top: none;
+border-left: none;
+border-right: none;
+text-align: center;
+}
+.question > input:focus, .question > input:hover {
+outline: none;
+border-bottom: 2px solid var(--marine-blue);
+}
+.challenge-questions button {
+width: 128px;
+height: 48px;
+font-size: 16px;
+align-self: center;
+font-family: Michroma;
+margin: 32px 0px 16px 0;
+cursor: pointer;    /*This makes the button look clickable, lol*/
+}
+
+.flag-input {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 25px;
+}
+.flag-input > form {
+display: flex;
+flex-direction: row;
+}
+.flag-input > form > input {
+flex: 9;
+width: 50vw;
+height: 64px;
+border-radius: 8px;
+font-family: Michroma;
+letter-spacing: 2.5px;
+text-align: center;
+margin: 0px 8px 0px 8px;
+}
+.flag-input > form > button {
+flex: 1;
+font-family: Michroma;
+font-size: 16px;
+margin: 0px 8px 0px 8px;
+cursor: pointer;
+}
+
+
+#submitted{
+    color: var(--pale-white);
+    background-color: var(--dark-blue);
+    padding: 0.5% 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ================================ Navbar ================================*/
+.nav-links {
+margin-left: auto;
+/*align-self aligns on cross axis (vertical rn)*/
+align-self: center; 
+}
+
+.nav-item {
+color:  var(--white);
+font-family: Michroma;
+text-decoration: None;
+margin: 0px 32px 0px 32px;
+}
+.active {
+text-decoration: underline;
+}
+
+.nav-item:hover {
+text-decoration: underline;
+}
+

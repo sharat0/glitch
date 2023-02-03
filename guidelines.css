@@ -1,0 +1,142 @@
+:root {
+  --white: #FFFFFF;
+  --pale-white: #ECECEC;
+  --dark-blue: #1C1E35;
+  --bgcolor: #101223;
+  --greyish-blue: #4C518A;
+  --marine-blue: #0066FF;
+  }
+
+*{
+  overflow-x: hidden;
+}
+body {
+    background-color: #101223;
+    /* overflow-x: scroll; */
+  }
+  .font-michroma, .michroma {
+    font-family: Michroma;
+  }
+  body {
+    color: var(--pale-white);
+    font-family: Raleway;
+  }
+  /* Add some custom styles to the title */
+
+  #logo{
+    width: 30%;
+    margin-left: 35%;
+    /* padding-top: 30px; */
+    margin-top: 80px;
+    margin-bottom: 50px;
+    filter: drop-shadow(0 0 5px rgb(0, 17, 255));
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+  /* Add some custom styles to the accordion */
+  .accordion {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .container {
+    max-width: 90%;
+    margin-left: 5%;
+  }
+  /* Add some custom styles to the card header */
+  .card-header {
+    background-color: #1C1E35;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Add some custom styles to the card body */
+  .card-body {
+    background-color: #101223;
+    color: WHITE;
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  /* Add some custom styles to the button */
+  .btn-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .btn{
+    font-size: 23px;
+  }
+  
+  /* Add some custom styles to the list items */
+  li {
+    margin-bottom: 10px;
+  }
+  img {
+    vertical-align: middle;
+  }
+  .nav-links {
+    margin-left: auto;
+    align-self: center;
+    font-family: Raleway;
+    overflow: hidden;
+  }
+  nav {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    padding: 0px 5vh 0px 5vh;
+    background-color: var(--bgcolor);
+    position: fixed;
+    z-index: 500;
+  }
+  .nav-item {
+    color: var(--white);
+    font-family: Michroma;
+    text-decoration: None;
+    margin: 0px 32px 0px 32px;
+    
+  }
+  .nav-item:hover {
+    text-decoration: underline;
+  }
+
+  .login{
+    background-color: #0066FF;
+    padding: 20px 10px;
+    border-radius: 50px;
+  }
+  .login:hover{
+    color: #fff;
+  }
+  
+
+  #demo{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  #demo-img{
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 0 0 20px #fff;
+    padding-bottom: 20px;
+  }
+
+  #explaination{
+    width: 70%;
+    margin-left: 15%;
+    border: 2px solid #fff;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+
+  

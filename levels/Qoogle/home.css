@@ -1,0 +1,68 @@
+  #googleimg{
+    margin-top: 10%;
+    margin-bottom: 50px;
+    height: 0%;
+    width: 30%;
+
+  }
+  ul{
+    display: flex;
+    width: 30%;
+    padding-left: 0px;
+    list-style: none;
+    justify-content: space-around;
+    margin: 6px;
+  }
+
+  #Bottomdiv{
+    font-size: 14px;
+    margin-top: 18%;
+    padding-left: 22%;
+    padding-right: 10%;
+    margin-right: 10% ;
+    font-size: 16px;
+    
+  }
+  #Bottomdiv a{
+    margin-left: 1.5%;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+  
+  #submit:hover{
+    border: 1px solid gray;
+  }
+  #lang{
+    padding-top: 4%;
+
+  }
+  form{
+    margin-top: 0%;
+    
+  }
+
+  #query{
+    width: 30%;
+    height: 6vh;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  #submit{
+    width: 10%;
+    height: 4vh;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  #text{
+    display: inline-block;
+  }

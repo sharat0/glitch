@@ -1,0 +1,13 @@
+Once upon a time, in a faraway land, there was a young hacker named Jack. Jack had always been fascinated with the world of computers and had spent many hours learning about different types of attacks and vulnerabilities.
+
+One day, Jack decided to put his skills to the test and set out to find a place named GLITCH to practice his skills.
+
+Excitedly, he began to probe the server, trying different techniques to find a way in. As he worked, he realized that he was getting closer and closer to finding a way in. But just as he thought he had found the right path, he realized that he was a little behind in his progress.
+
+Determined not to give up, Jack continued to work, trying different methods and techniques to find a way in.
+
+Finally, after many hours of hard work, Jack was able to find a way into the server. As he looked around, he was amazed at all the information and files that were stored on it. He knew that he had found the right path, but he was just a little behind in his progress.
+
+But Jack knew that success was not about being the first to find a way in, but about being persistent and determined. So, he continued to explore the server, learning all that he could about it and leaving no stone unturned.
+
+In the end, Jack was able to successfully find the flag hidden in the server. And he knew that, even though he had been a little behind in his progress, he was on the right path all along.
