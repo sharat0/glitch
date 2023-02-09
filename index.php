@@ -46,7 +46,7 @@
           </h2>
         </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#eventRules">
+        <div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#eventRules">
           <div class="card-body">
             <p>All attendees, speakers, sponsors and volunteers at our event are required to agree with the following
               code of conduct. Organizers will enforce this code throughout the event. We expect cooperation from all

@@ -9,7 +9,7 @@
         $email=$_POST['email'];
         $pass=$_POST['pass'];
 
-        $query="SELECT * from login where email='$email' and pass='$pass' and type ='0'";
+        $query="SELECT * from login where email='$email' and pass='$pass'";
         $res=mysqli_query($conn, $query);
 
         if ($res) {

@@ -180,7 +180,7 @@
         <div class="nav-links">
             <a href="home.php" class="nav-item active">Home</a>
             <a href="/about" class="nav-item">About</a>
-            <a href="/contact-us" class="nav-item">Contact Us</a>
+            <a href="logout.php" class="nav-item">Logout</a>
         </div>
     </nav>
 

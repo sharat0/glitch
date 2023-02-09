@@ -26,278 +26,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="stylesheet" href="style.css">
     
     <!-- Linking Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Raleway:wght@200;400;600;700;800&display=swap" rel="stylesheet">
-
-        <style>
-            .flag-input {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 25px;
-        }
-
-        /* All CSS goes here*/
-        :root {
-        --white: #FFFFFF;
-        --pale-white: #ECECEC;
-        --dark-blue: #1C1E35;
-        --bgcolor: #101223;
-        --greyish-blue: #4C518A;
-        --marine-blue: #0066FF;
-        }
-
-
-        body {
-        background-color: var(--bgcolor);
-        color: var(--pale-white);
-        font-family: Raleway;
-        display: flex;
-        flex-wrap: wrap;
-        }
-
-
-        nav {
-        display: flex;
-        height: 10vh;
-        width: 100vw;
-        padding: 0px 5vh 0px 5vh;
-        background-color: var(--bgcolor); /*Content starts flowing over the navbar when scrolled without bgcolor property*/
-        }
-
-
-
-        /* ============================ Class Definitions ============================ */
-
-        /* raleway is a shorthand alias for font-raleway*/
-        .font-raleway, .raleway {
-        font-family: Raleway;
-        }
-
-        /* michroma is a shorthand alias for font-michroma*/
-        .font-michroma, .michroma {
-        font-family: Michroma;
-        }
-
-        /* Use this in conjunction with the above fonts */
-        .btn-primary {
-        background-color: var(--marine-blue);
-        color: var(--white);
-        border: none;
-        border-radius: 8px;
-        }
-
-
-        .nav-logo {
-            width: 20vw;
-            object-fit: scale-down;
-        }
-
-        .challenge-page {
-        display: flex;
-        flex-direction: column;
-        /* align-items: center;  */
-        justify-content: space-around;
-        height: 90vh;
-        margin: 0px 5vh 0px 5vh;
-        /* padding: 0px 5vh 0px 5vh; */
-        }
-
-        .challenge-container {
-        display: flex;
-        flex-direction: row;
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        }
-
-        .challenge-section {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 64px;
-        min-width: 40vw;
-        }
-        .challenge-section > p {
-        letter-spacing: 1.5px;
-        word-spacing: 4px;
-        line-height: 2rem;
-        }
-        .challenge-section > a {
-        display: flex;
-        color: var(--pale-white);
-        margin: 16px;
-        letter-spacing: 2px;
-        }
-        .challenge-section > h4 {
-        font-weight: 500;
-        word-spacing: 2px;
-        line-height: 2rem;
-        }
-        .challenge-section > textarea {
-        height: 96px;
-        width: 40vw;
-        font-size: 16px;
-        color: var(--pale-white);
-        background-color: var(--dark-blue);
-        border: none;
-        border-radius: 8px;
-        resize: none;
-        }
-        .challenge-section > textarea:focus, .challenge-section > textarea:hover {
-        outline: 2px var(--marine-blue) solid;
-        /* border: #0066FF; */
-        }
-        .challenge-section button {
-        width: 128px;
-        height: 48px;
-        cursor: pointer;
-        margin: 2rem;
-        margin-left: 35%;
-        }
-
-        .hint{
-        height: 96px;
-        width: 40vw;
-        font-size: 16px;
-        color: var(--pale-white);
-        background-color: var(--dark-blue);
-        border: none;
-        border-radius: 8px;
-        text-align: center;
-        }
-
-        .challenge-section > a > img{
-        height: 20px;
-        width: 20px;
-        margin: 0px 8px 0px 8px;
-        }
-
-        .challenge-questions {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* align-items: center; */
-        /* flex: 1; */
-        border-radius: 8px;
-        background-color: var(--dark-blue);
-        margin-left: 64px;
-        min-width: 40vw; /* An attempt to make the UI less cluttered */
-        }
-        .challenge-questions > form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        }
-
-        .question > label {
-        font-family: Michroma;
-        font-size: 12px;
-        }
-        .question > input{
-        /* width: 80%; */
-        height: 32px;
-        margin: 16px;
-        font-family: Michroma;
-        color: var(--pale-white);
-        background-color: transparent;
-        /* This can't be converted to use vairables  */
-        border: 2px solid #4C518A; 
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        text-align: center;
-        }
-        .question > input:focus, .question > input:hover {
-        outline: none;
-        border-bottom: 2px solid var(--marine-blue);
-        }
-        .challenge-questions button {
-        width: 128px;
-        height: 48px;
-        font-size: 16px;
-        align-self: center;
-        font-family: Michroma;
-        margin: 32px 0px 16px 0;
-        cursor: pointer;    /*This makes the button look clickable, lol*/
-        }
-
-        .flag-input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 25px;
-        }
-        .flag-input > form {
-        display: flex;
-        flex-direction: row;
-        }
-        .flag-input > form > input {
-        flex: 9;
-        width: 50vw;
-        height: 64px;
-        border-radius: 8px;
-        font-family: Michroma;
-        letter-spacing: 2.5px;
-        text-align: center;
-        margin: 0px 8px 0px 8px;
-        }
-        .flag-input > form > button {
-        flex: 1;
-        font-family: Michroma;
-        font-size: 16px;
-        margin: 0px 8px 0px 8px;
-        cursor: pointer;
-        }
-
-        #submitted{
-            color: var(--pale-white);
-            background-color: var(--dark-blue);
-            padding: 0.5% 5%;
-            border-radius: 10px;
-            text-align: center;
-        }
-        #submitted a{
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-            font-weight: normal;
-            border-bottom: 1px solid #fff;
-        }
-
-        .submitted-mcq{
-            background: transparent;
-            color: #39ff39;
-            border: 2px solid #39ff39;
-            border-radius: 10px;
-            cursor: not-allowed !important;
-        }
-        /* ================================ Navbar ================================*/
-        .nav-links {
-        margin-left: auto;
-        /*align-self aligns on cross axis (vertical rn)*/
-        align-self: center; 
-        }
-
-        .nav-item {
-        color:  var(--white);
-        font-family: Michroma;
-        text-decoration: None;
-        margin: 0px 32px 0px 32px;
-        }
-        .active {
-        text-decoration: underline;
-        }
-
-        .nav-item:hover {
-        text-decoration: underline;
-        }
-    </style>
     
     </head>
 
@@ -305,7 +39,7 @@
 
         <!-- Navbar (Shakir) -->
         <nav>
-            <a href="/">
+            <a href="home.php">
                 <img src="assets/kjc-flag-latest.png" width="256px" height="64">
             </a>
             
@@ -422,7 +156,7 @@ To arrive at the destined part.</p>
                 $res=mysqli_query($conn, $submitted);
                 if ($res) {
                     if (mysqli_num_rows($res)<>0) {
-                        echo '<button type="button" class="submitted-mcq" id="do-login" disabed>Submitted</button>';
+                        echo '<button type="submit" class="btn-primary btn-reset" id="do-login" name="reset">Reset</button>';
                     }
                     else{
                         echo '<button type="submit" class="btn-primary" id="do-login" name="mcq">Submit</button>';
@@ -508,7 +242,8 @@ To arrive at the destined part.</p>
                 $sql="INSERT into score (uid, name, level, type, score) values ('$uid', '$name', '3', '2', '$score')";
                 $res=mysqli_query($conn, $sql);
                 if ($res) {
-                    header('location: challenge-3.php');
+                    echo "<meta http-equiv='refresh' content='0'>";
+
                 }
                 else {
                     echo "<script>alert('Unable to store data');</script>";
@@ -517,6 +252,19 @@ To arrive at the destined part.</p>
             }
         }
        
+    }
+
+    // RESET QUESTIONS SUBMISSIONS
+    if (isset($_POST['reset'])) {
+        $sql="DELETE from score where uid='$uid' and level='3' and type='2'";
+        $res=mysqli_query($conn, $sql);
+        if ($res) {
+            echo "<meta http-equiv='refresh' content='0'>";
+
+        }
+        else {
+            echo "<script>alert('Unable to reset');</script>";
+        }
     }
 
 
@@ -537,7 +285,7 @@ To arrive at the destined part.</p>
                     $sql="INSERT into score (uid, name, level, type, score) values ('$uid', '$name', '3', '1', '5')";
                     $res=mysqli_query($conn, $sql);
                     mysqli_query($conn,"INSERT into duration (uid, level, type) values ($uid, '3', '2')");
-                    header('location: challenge-3.php');
+                    echo "<meta http-equiv='refresh' content='0'>";
                 }
                 else{
                     echo "<script>alert('Incorrect flag! Try again.');</script>";

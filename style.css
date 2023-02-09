@@ -242,3 +242,9 @@ text-decoration: underline;
 text-decoration: underline;
 }
 
+.btn-reset{
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    box-shadow: 0 0 10px #fff;
+}
