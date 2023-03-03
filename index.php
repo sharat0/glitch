@@ -22,14 +22,24 @@
 <body>
 
   <nav>
-    <a href="/">
-      <img src="assets/kjc-flag-latest.png" width="256px" height="64">
+    <a href="index.php">
+      <img src="assets/kjc-flag-latest.png" width="260px" height="55">
     </a>
 
     <div class="nav-links">
-      <a href="/about" class="nav-item">About</a>
-      <a href="/contact-us" class="nav-item">Contact Us</a>
-      <a href="login.php" class="nav-item login">Login</a>
+      <?php
+        session_start(); 
+        if(isset($_SESSION['loggedin']) && ($_SESSION['loggedin']==true)){
+          echo '<a href="home.php" class="nav-item login">Home</a>';
+          if($_SESSION['type'] == 1){
+            echo '<a href="score" class="nav-item login">Score</a>';
+        }
+          echo '<a href="logout.php" class="nav-item">Logout</a>';
+        }
+        else{
+          echo '<a href="login.php" class="nav-item login">Login</a>';
+        }
+      ?>
     </div>
   </nav>
   <img src="img/glitch.png" alt="GLITCH" id="logo">

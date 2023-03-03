@@ -237,7 +237,7 @@ img{
 <body>
 <section class='login' id='login'>
 <div class='head'>
-  <img src="img/glitch.png" alt="Glitch" id="logo">
+  <a href="index.php"><img src="img/glitch.png" alt="Glitch" id="logo"></a>
   </div>
   <div class='form'>
     <form action="" method="POST">

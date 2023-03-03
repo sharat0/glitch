@@ -55,14 +55,8 @@
         <!-- Navbar (Shakir) -->
         <nav>
             <a href="home.php">
-                <img src="assets/kjc-flag-latest.png" width="256px" height="64">
+            <img src="assets/kjc-flag-latest.png" class="kjlogo">
             </a>
-            
-            <div class="nav-links">
-                <a href="home.php" class="nav-item">Home</a>
-                <a href="/about" class="nav-item">About</a>
-                <a href="/contact-us" class="nav-item">Contact Us</a>
-            </div>
         </nav>
     
 
@@ -161,7 +155,7 @@
                     </div>
                     <div class="question">
                         <label>Username of the insta handle?</label>
-                        <input type="text" name="c1q4" id='c1q4' placeholder="**********x">
+                        <input type="text" name="c1q4" id='c1q4' placeholder="l***_c****_*****r">
                     </div>
                     <div class="question">
                         <label>Hashtag in post containing flag?</label>
@@ -241,7 +235,7 @@
         if ($q3=="10475") {
             $points++;
         }
-        if ($q4=="hadeserebux") {
+        if ($q4=="lazy_cyber_hunter") {
             $points++;
         }
         if ($q5=="osintmaster") {
