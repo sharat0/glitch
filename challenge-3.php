@@ -40,14 +40,8 @@
         <!-- Navbar (Shakir) -->
         <nav>
             <a href="home.php">
-                <img src="assets/kjc-flag-latest.png" width="256px" height="64">
+            <img src="assets/kjc-flag-latest.png" class="kjlogo">
             </a>
-            
-            <div class="nav-links">
-                <a href="home.php" class="nav-item">Home</a>
-                <a href="/about" class="nav-item">About</a>
-                <a href="/contact-us" class="nav-item">Contact Us</a>
-            </div>
         </nav>
     
 

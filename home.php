@@ -29,158 +29,132 @@
 
     <style>
 
-                
-        :root {
-            --white: #FFFFFF;
-            --pale-white: #ECECEC;
-            --dark-blue: #1C1E35;
-            --bgcolor: #101223;
-            --greyish-blue: #4C518A;
-            --marine-blue: #0066FF;
-        }
-        body {
-            background-color: var(--bgcolor);
-            color: var(--pale-white);
-            font-family: Raleway;
-        }
-        #glitchimg{
-            padding-left: 40%;
-            padding-top: 5%;
-        }
-        /* ================================ Navbar ================================*/
-
-        nav {
-            display: flex;
-            align-items: center;
-            position: sticky;
-            top: 0px;
-            padding: 0px 5vh 0px 5vh;
-            background-color: var(--bgcolor);
-        }
-
-        .nav-links {
-            margin-left: auto;
-            align-self: center; 
-        }
-
-
-        .nav-item {
-            color:  var(--white);
-            font-family: Michroma;
-            text-decoration: None;
-            margin: 0px 32px 0px 32px;
-            padding-bottom: 10px;
-        }
-
-        .nav-item:hover {
-            border-bottom: 1px solid #fff;
-        }
-
-
-        .font-raleway, .raleway {
-            font-family: Raleway;
-        }
-
-
-        /* HEADINGS AND OTHER TEXTS */
-
-
-        .head1{
-            font-family: Michroma;
+       .inline-flex{
+            display: inline-flex;
+            justify-content: space-between;
             text-align: center;
-            font-size: 48px;
-            margin-bottom: 0 !important;
-        }
-
-        .head2{
-            font-family: Michroma;
-            text-align: center;
-            font-size: 1rem;
-            margin-bottom: 40px !important;
-        }
-
-
-        /* BUTTONS */
-
-        .btn-primary {
-            background-color: var(--marine-blue);
-            border: none;
-            border-radius: 8px;
-        }
-
-
-        .flex {
-            display: flex;
             width: 100%;
         }
 
+        .xact{
+            margin-top: 1%;
+            margin-right: 1%;
+        }
 
-        .btn{
-            background-color: var(--marine-blue);
-            color: var(--white);
-            border: none;
-            border-radius: 8px;
-            width: 25%;
-            height: 70px;
-            font-family: Michroma;
+        .nav-links{
+            display: inline-flex;
+            justify-content: space-between;
             text-align: center;
-            font-size: 20px;
-            transition: .3s ease;
-            cursor: pointer;
-            margin-left: 15%;
-            margin-bottom: 5%;
+            width: 50%;
+            margin-top: 1%;
+            margin-right: 1%;
         }
 
-        .btn:hover{
-            background: transparent;
-            border: 2px solid var(--white);
-        }
-
-        .cleared{
-            border: 2px solid #39ff39 !important;
-            background: transparent !important;
-            color: #39ff39 !important;
-        }
-
-        img#logo{
-            width: 30%;
-            margin-left: 35%;
-            margin-top: 50px; 
-        }
-
-        .btn {
-            background-color: var(--marine-blue);
-            color: var(--white);
-            border: none;
-            border-radius: 8px;
-            width: 25%;
-            height: 60px;
-            font-family: Michroma;
-            text-align: center;
-            font-size: 20px;
-            transition: .3s ease;
-            cursor: pointer;
-            margin-left: 15%;
-            margin-bottom: 5%;
-            padding-top: 1.4%;
+        .nav-item{
             text-decoration: none;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-left: 2%;
         }
 
-    </style>
+        .nav-item.active{
+            color: #FFC300;
+        }
+
+        .nav-item:hover{
+            color: #FFC300;
+        }
+
+        .card-header{
+            width: 60%;
+            margin-left: 20%; 
+            margin-top: 2%;
+        }
+
+        .flex-inline{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .text{
+            display: inline-block;
+        }
+
+        .card{
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 2%;
+            padding: 2%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .card-header{
+            width: 60%;
+            margin-left: 20%; 
+            margin-top: 2%;
+        }
+
+        .flex-inline{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .text{
+            display: inline-block;
+        }
+
+        .card{
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 2%;
+            padding: 2%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .card-header{
+            width: 60%;
+            margin-left: 20%; 
+            margin-top: 2%;
+        }
+
+        .flex-inline{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .text{
+            display: inline-block;
+        }
+
+        .card{
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 2%;
+            padding
+       }
+
+       .kjlogo{
+        width: 260px;
+        height:55px;
+       }    </style>
 </head>
 
 <body>
 
     <!-- Navbar (Shakir) -->
-    <nav>
-        <a href="home.php">
-            <img src="assets/kjc-flag-latest.png" width="256px" height="64">
+    <nav class="inline-flex">
+        <a href="index.php">
+            <img src="assets/kjc-flag-latest.png" class="kjlogo">
         </a>
-        
-        <div class="nav-links">
-            <a href="home.php" class="nav-item active">Home</a>
-            <a href="/about" class="nav-item">About</a>
-            <a href="logout.php" class="nav-item">Logout</a>
+        <div class="xact">
+        <img src="assets/Xactitude.svg" alt="Xactitude">
         </div>
     </nav>
 
